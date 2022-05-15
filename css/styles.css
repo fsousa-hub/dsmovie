@@ -3,7 +3,7 @@
 :root {
     --bg-gray: #e8e8e8;
     --text-gray: #4a4a4a;
-    --color-primary: #4d41c0;
+    --color-primary: #4D41C0;
     --white: #fff;
     --text-light-gray: #aaa;
     --star-yellow: #FFBB3A;
@@ -63,7 +63,7 @@ a, a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0 10px;
 }
 
 .dsmovie-card {
@@ -169,4 +169,52 @@ a, a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.dsmovie-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dsmovie-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dsmovie-pagination-box p{
+    margin: 0;
+}
+
+.dsmovie-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img{
+    filter: brightness(0) saturate(100%) invert(25%) sepia(64%) saturate(1999%) hue-rotate(229deg) brightness(92%) contrast(92%);
+}
+
+
+.dsmovie-pagination-box button:disabled{
+    border: 1px solid var(--text-light-gray);
+    
+}
+
+.dsmovie-pagination-box button:disabled img{
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal{
+    transform: rotate(180deg);
 }
